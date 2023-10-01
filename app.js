@@ -59,3 +59,55 @@ switch (sum) {
   default: console.log("Please Try Again");
     break;
 }
+
+for (let index = 0; index <= 5; index++) {
+  alert(index);
+}
+
+let alertText = "";
+for (let i = 0; i <= 5; i++) {
+  alertText += i + ", ";
+}
+alert(alertText);
+
+for (let index = 0; index < 20 ; index++) {
+  if (index%3 == 0) {
+    console.log(index);
+  }
+}
+
+let numbers = -1 ;
+while (numbers<=0 || numbers>=100) {
+  numbers= prompt("Enter a number between 0 and 100");
+}
+alert(`the number is = ${numbers}`);
+
+let string = "";
+while (isNaN(string) == false) {
+  string = prompt("please enter a word to reverse");
+}
+let stringArr = [];
+for (let index = 0; index < string.length; index++) {
+  stringArr.push(string[index]);
+}
+console.log(stringArr.reverse());
+
+let num_3 ;
+while (isNaN(num_3)) {
+  num_3 = prompt("enter a number")
+}
+var num_0=0 ;
+for (let index = 0; index <= num_3; index++) {
+  num_0 = num_0 +index;  
+}
+console.log(num_0);
+
+let num_4 ;
+while (isNaN(num_4)) {
+  num_4 = prompt("enter a number")
+}
+var num_0=0 ;
+for (let index = 0; index <= num_4; index++) {
+  num_0 = num_0 +index;  
+}
+console.log(num_0/ (++num_4));
